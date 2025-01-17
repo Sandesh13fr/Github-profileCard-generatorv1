@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    gap: 5%;
+}
+
+.getData{
+    width: 23%;
+    height: 60vh;
+    background-color: #212121;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 25px;
+}
+.getData h1{
+    color: antiquewhite;
+}
+.getData .logo {
+    font-size: 7rem;
+    color: whitesmoke;
+}
+
+.getData .entryArea{
+    width: 100%;
+    height: 5%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+    border-radius: 25px;
+    color: crimson;
+    position: relative;
+}
+.getData .entryArea input[type="text"]{
+    position: absolute;
+    width: 96%;
+    color: coral;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    background:transparent;
+    transition: all 0.1s ease;
+    z-index: 3;
+}
+
+.getData .buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin: 3%;
+}
+.getData button{
+    padding: 5% 13%;
+    border-radius: 10px;
+}
+.getData button:active,
+.getData button:focus{
+    scale: 0.8;
+    background-color: #e5d3ba;
+}
+.getData .buttons button:hover{
+    scale: 0.9;
+    background-color: antiquewhite;
+}
+
+
+
+.card1, .card2{
+    width: 23%;
+    height: 60vh;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    border-radius: 17px;
+    position: relative;
+    background-color: #212121;
+}
+
+.decal{
+    width: 98%;
+    height:48% ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#decal1{
+    /* background-color: crimson; */
+    background-image: url("./assets/decal-bg.jpg");
+    background-size: cover;
+    flex-direction: column;
+    text-align: end;
+}
+#decal1 img{
+    width: 30%;
+    align-self: flex-end;
+}
+#decal1 .glass{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-radius: inherit;
+}
+
+#decal2{
+    width: 100%;
+    align-self: flex-start;
+    gap: 1%;
+    background-color: #212121;
+
+}
+#decal2 .data i{
+    font-size: 4rem;
+    color: black;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-radius: 50%;
+}
+#decal2 .data p{
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    top: 88%;
+    left: 8%;
+    cursor: pointer;
+}
+#decal2 .console{
+    width: 56%;
+    height: 96%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-radius: 13px;
+
+}
+#decal2 .console .maclike{
+    width: 100%;
+    height: 10%;
+    /* background-color: #212121; */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px double #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#decal2 .console .maclike :is(.close, .restore, .minimize) {
+    width: 3.5%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;   
+}
+
+#decal2 .console .maclike .close{
+    top: 52.5%;
+    left: 45%;
+    background-color: crimson;   
+}
+#decal2 .console .maclike .restore{
+    top: 52.5%;
+    left: 50.3%;
+    background-color: yellow;   
+}
+#decal2 .console .maclike .minimize{
+    top: 52.5%;
+    left: 55.5%;
+    background-color: lightgreen;   
+}
+
+#decal2 .console .maclike p{
+    align-self: flex-end;
+    position: absolute;
+    right: 10%;
+    top: 52.5%;
+    font-size: small;
+    font-weight: 300;
+    color: darkgrey;
+}
+#decal2 .console .Userdata {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#decal2 .console .Userdata pre{
+    font-size: 13px;
+    padding: 7px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-wrap-style: balance;
+    margin-bottom: 11%;
+    line-height: 20px;
+}
+.keys{
+    color: #FFA500;
+
+}
+.nums{
+    color: #638FDA;
+}
+.textual{
+    color: greenyellow;
+    /* text-wrap-mode: initial; */
+    text-wrap-style:balance ;
+}
+
+#decal2 .data{
+    width: 40%;
+    height: 96%;
+    background-color: azure;
+    border-radius: 13px;
+}
+
+#decal1::before{
+    content: " ";
+    width: 21px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top:23.1%;
+    border-bottom-left-radius:50%;
+    box-shadow: -6px 6px ;
+    z-index:1;
+    align-content: flex-end;
+}
+#decal2::before{
+    content: " ";
+    width: 21px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top:72.4%;
+    border-top-left-radius:50%;
+    box-shadow: -6px -6px ;
+    z-index:1;
+}
+#decal1::after{
+    content: " ";
+    width: 21px;
+    aspect-ratio: 1;
+    position: absolute;
+    top:44.5%;
+    left: 39.5%;
+    border-bottom-left-radius:50%;
+    box-shadow: -6px 6px ;
+    z-index:1;
+}
+#decal2::after{
+    content: " ";
+    width: 21px;
+    aspect-ratio: 1;
+    position: absolute;
+    top:51%;
+    left: 39.5%;
+    border-top-left-radius:50%;
+    box-shadow: -6px -6px ;
+    z-index:1;
+}
+
+.circle{
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #212121;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -20%;
+    border: 7px solid #000;
+    overflow: hidden;
+    z-index: 2;
+    /* border-block-color: aliceblue; */
+    /* border-inline-color:red ; */
+}
+.circle img{
+    width: 98%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    /* filter: drop-shadow(3px 0 100x rgba(255, 255, 255, 0.8)); */
+}
+.card2{
+    gap: 0;
+}
+.card2 img{
+    width: 100%;
+    height:1fr;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+@media(max-width:600px){
+    .main-container{
+        flex-direction: column;
+        height: 180vh;
+    }
+    .card1, .getData,.card2{
+        width: 70%;
+    }
+    .card2{
+        gap: 5%;
+    }
+    .circle{
+        left: -17%;
+    }
+    #decal1::before{
+        top: 25%;
+    }
+    #decal2::before{
+        top: 50%;
+    }
+    span{
+        font-size: 13px;
+        text-wrap-mode: wrap;
+    }
+    pre{
+        line-height: 20px;
+    }
+    #decal2 .data i{
+        bottom: 0;
+    font-size: 4rem;
+    }
+    i::after{
+        content: "Visit profile";
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        font-size: 0.7rem;
+        top: 65%;
+        left: -20%;
+        text-wrap-mode: nowrap;
+    }
+    #decal2 p{
+        display: none;
+    }
+}
